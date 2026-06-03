@@ -1,0 +1,2 @@
+## Precompile Arduino.h header
+recipe.hooks.sketch.prebuild.1.pattern="{teensytools.path}precompile_helper" "{build.core.path}" "{build.path}" "{compiler.path}{build.toolchain}{build.command.g++}" -x c++-header {build.flags.optimize} {build.flags.common} {build.flags.dep} {build.flags.cpp} {build.flags.cpu} {build.flags.defs} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DF_CPU={build.fcpu} -D{build.usbtype} -DLAYOUT_{build.keylayout} "-I{build.core.path}" "-I{build.variant.path}" "{build.path}/pch/Arduino.h" -o "{build.path}/pch/Arduino.h.gch"
