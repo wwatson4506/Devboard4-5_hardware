@@ -10,4 +10,5 @@
 
 All that was changed in the three files was the extention of pin numbers defined and processed (pins 55 to 69). 
 
-
+Arduino IDE 2.3.9 compiles but fails to upload to DEboard with this error: "Platform 'Teensy:avr' not found".
+I'm not smart enough to know why:)
