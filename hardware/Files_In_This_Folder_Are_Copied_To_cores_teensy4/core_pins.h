@@ -2327,6 +2327,10 @@
 #define CORE_INT44_PIN		44
 #define CORE_INT45_PIN		45
 
+//*********************************************************************
+// Dev Board 4 and 5 Defines follow.
+//*********************************************************************
+#if defined(DEV45) // Defined in boards.txt
 //====================================
 // The following is for Devboard 4 & 5
 //====================================
@@ -2348,7 +2352,6 @@
 #define CORE_PIN61_BIT        29
 #define CORE_PIN62_BIT        30
 #define CORE_PIN63_BIT        31
-
 #define CORE_PIN64_BIT		  20
 #define CORE_PIN65_BIT		  21
 #define CORE_PIN66_BIT		  28
@@ -2607,7 +2610,9 @@
 #define CORE_INT67_PIN    	  67
 #define CORE_INT68_PIN    	  68
 #define CORE_INT69_PIN    	  69
-//=================================================================
+#endif // DEV45
+//*******************************************************************
+
 #define CORE_INT_EVERY_PIN	1
 
 #endif // __IMXRT1062__
@@ -2715,7 +2720,7 @@ static inline void digitalWriteFast(uint8_t pin, uint8_t val)
 				CORE_PIN38_PORTSET = CORE_PIN38_BITMASK;
 			} else if (pin == 39) {
 				CORE_PIN39_PORTSET = CORE_PIN39_BITMASK;
-#if CORE_NUM_DIGITAL > 40
+#if CORE_NUM_DIGITAL > 39
 			} else if (pin == 40) {
 				CORE_PIN40_PORTSET = CORE_PIN40_BITMASK;
 			} else if (pin == 41) {
@@ -2729,7 +2734,7 @@ static inline void digitalWriteFast(uint8_t pin, uint8_t val)
 			} else if (pin == 45) {
 				CORE_PIN45_PORTSET = CORE_PIN45_BITMASK;
 #endif
-#if CORE_NUM_DIGITAL > 46
+#if CORE_NUM_DIGITAL > 45
 			} else if (pin == 46) {
 				CORE_PIN46_PORTSET = CORE_PIN46_BITMASK;
 			} else if (pin == 47) {
@@ -2748,6 +2753,36 @@ static inline void digitalWriteFast(uint8_t pin, uint8_t val)
 				CORE_PIN53_PORTSET = CORE_PIN53_BITMASK;
 			} else if (pin == 54) {
 				CORE_PIN54_PORTSET = CORE_PIN54_BITMASK;
+			} else if (pin == 55) {
+				CORE_PIN55_PORTSET = CORE_PIN55_BITMASK;
+			} else if (pin == 56) {
+				CORE_PIN56_PORTSET = CORE_PIN56_BITMASK;
+			} else if (pin == 57) {
+				CORE_PIN57_PORTSET = CORE_PIN57_BITMASK;
+			} else if (pin == 58) {
+				CORE_PIN58_PORTSET = CORE_PIN58_BITMASK;
+			} else if (pin == 59) {
+				CORE_PIN59_PORTSET = CORE_PIN59_BITMASK;
+			} else if (pin == 60) {
+				CORE_PIN60_PORTSET = CORE_PIN60_BITMASK;
+			} else if (pin == 61) {
+				CORE_PIN61_PORTSET = CORE_PIN61_BITMASK;
+			} else if (pin == 62) {
+				CORE_PIN62_PORTSET = CORE_PIN62_BITMASK;
+			} else if (pin == 63) {
+				CORE_PIN63_PORTSET = CORE_PIN63_BITMASK;
+			} else if (pin == 64) {
+				CORE_PIN64_PORTSET = CORE_PIN64_BITMASK;
+			} else if (pin == 65) {
+				CORE_PIN65_PORTSET = CORE_PIN65_BITMASK;
+			} else if (pin == 66) {
+				CORE_PIN66_PORTSET = CORE_PIN66_BITMASK;
+			} else if (pin == 67) {
+				CORE_PIN67_PORTSET = CORE_PIN67_BITMASK;
+			} else if (pin == 68) {
+				CORE_PIN68_PORTSET = CORE_PIN68_BITMASK;
+			} else if (pin == 69) {
+				CORE_PIN69_PORTSET = CORE_PIN69_BITMASK;
 #endif
 			}
 		} else {
@@ -2831,7 +2866,7 @@ static inline void digitalWriteFast(uint8_t pin, uint8_t val)
 				CORE_PIN38_PORTCLEAR = CORE_PIN38_BITMASK;
 			} else if (pin == 39) {
 				CORE_PIN39_PORTCLEAR = CORE_PIN39_BITMASK;
-#if CORE_NUM_DIGITAL > 40
+#if CORE_NUM_DIGITAL > 39
 			} else if (pin == 40) {
 				CORE_PIN40_PORTCLEAR = CORE_PIN40_BITMASK;
 			} else if (pin == 41) {
@@ -2845,7 +2880,7 @@ static inline void digitalWriteFast(uint8_t pin, uint8_t val)
 			} else if (pin == 45) {
 				CORE_PIN45_PORTCLEAR = CORE_PIN45_BITMASK;
 #endif
-#if CORE_NUM_DIGITAL > 46
+#if CORE_NUM_DIGITAL > 45
 			} else if (pin == 46) {
 				CORE_PIN46_PORTCLEAR = CORE_PIN46_BITMASK;
 			} else if (pin == 47) {
@@ -2864,6 +2899,36 @@ static inline void digitalWriteFast(uint8_t pin, uint8_t val)
 				CORE_PIN53_PORTCLEAR = CORE_PIN53_BITMASK;
 			} else if (pin == 54) {
 				CORE_PIN54_PORTCLEAR = CORE_PIN54_BITMASK;
+			} else if (pin == 55) {
+				CORE_PIN55_PORTCLEAR = CORE_PIN55_BITMASK;
+			} else if (pin == 56) {
+				CORE_PIN56_PORTCLEAR = CORE_PIN56_BITMASK;
+			} else if (pin == 57) {
+				CORE_PIN57_PORTCLEAR = CORE_PIN57_BITMASK;
+			} else if (pin == 58) {
+				CORE_PIN58_PORTCLEAR = CORE_PIN58_BITMASK;
+			} else if (pin == 59) {
+				CORE_PIN59_PORTCLEAR = CORE_PIN59_BITMASK;
+			} else if (pin == 60) {
+				CORE_PIN60_PORTCLEAR = CORE_PIN60_BITMASK;
+			} else if (pin == 61) {
+				CORE_PIN61_PORTCLEAR = CORE_PIN61_BITMASK;
+			} else if (pin == 62) {
+				CORE_PIN62_PORTCLEAR = CORE_PIN62_BITMASK;
+			} else if (pin == 63) {
+				CORE_PIN63_PORTCLEAR = CORE_PIN63_BITMASK;
+			} else if (pin == 64) {
+				CORE_PIN64_PORTCLEAR = CORE_PIN64_BITMASK;
+			} else if (pin == 65) {
+				CORE_PIN65_PORTCLEAR = CORE_PIN65_BITMASK;
+			} else if (pin == 66) {
+				CORE_PIN66_PORTCLEAR = CORE_PIN66_BITMASK;
+			} else if (pin == 67) {
+				CORE_PIN67_PORTCLEAR = CORE_PIN67_BITMASK;
+			} else if (pin == 68) {
+				CORE_PIN68_PORTCLEAR = CORE_PIN68_BITMASK;
+			} else if (pin == 69) {
+				CORE_PIN69_PORTCLEAR = CORE_PIN69_BITMASK;
 #endif
 			}
 		}
@@ -2965,7 +3030,7 @@ static inline uint8_t digitalReadFast(uint8_t pin)
 			return (CORE_PIN38_PINREG & CORE_PIN38_BITMASK) ? 1 : 0;
 		} else if (pin == 39) {
 			return (CORE_PIN39_PINREG & CORE_PIN39_BITMASK) ? 1 : 0;
-#if CORE_NUM_DIGITAL > 40
+#if CORE_NUM_DIGITAL > 39
 		} else if (pin == 40) {
 			return (CORE_PIN40_PINREG & CORE_PIN40_BITMASK) ? 1 : 0;
 		} else if (pin == 41) {
@@ -2979,7 +3044,7 @@ static inline uint8_t digitalReadFast(uint8_t pin)
 		} else if (pin == 45) {
 			return (CORE_PIN45_PINREG & CORE_PIN45_BITMASK) ? 1 : 0;
 #endif
-#if CORE_NUM_DIGITAL > 46
+#if CORE_NUM_DIGITAL > 45
 		} else if (pin == 46) {
 			return (CORE_PIN46_PINREG & CORE_PIN46_BITMASK) ? 1 : 0;
 		} else if (pin == 47) {
@@ -2998,6 +3063,36 @@ static inline uint8_t digitalReadFast(uint8_t pin)
 			return (CORE_PIN53_PINREG & CORE_PIN53_BITMASK) ? 1 : 0;
 		} else if (pin == 54) {
 			return (CORE_PIN54_PINREG & CORE_PIN54_BITMASK) ? 1 : 0;
+		} else if (pin == 55) {
+			return (CORE_PIN55_PINREG & CORE_PIN55_BITMASK) ? 1 : 0;
+		} else if (pin == 56) {
+			return (CORE_PIN56_PINREG & CORE_PIN56_BITMASK) ? 1 : 0;
+		} else if (pin == 57) {
+			return (CORE_PIN57_PINREG & CORE_PIN57_BITMASK) ? 1 : 0;
+		} else if (pin == 58) {
+			return (CORE_PIN58_PINREG & CORE_PIN58_BITMASK) ? 1 : 0;
+		} else if (pin == 59) {
+			return (CORE_PIN59_PINREG & CORE_PIN59_BITMASK) ? 1 : 0;
+		} else if (pin == 60) {
+			return (CORE_PIN60_PINREG & CORE_PIN60_BITMASK) ? 1 : 0;
+		} else if (pin == 61) {
+			return (CORE_PIN61_PINREG & CORE_PIN61_BITMASK) ? 1 : 0;
+		} else if (pin == 62) {
+			return (CORE_PIN62_PINREG & CORE_PIN62_BITMASK) ? 1 : 0;
+		} else if (pin == 63) {
+			return (CORE_PIN63_PINREG & CORE_PIN63_BITMASK) ? 1 : 0;
+		} else if (pin == 64) {
+			return (CORE_PIN64_PINREG & CORE_PIN64_BITMASK) ? 1 : 0;
+		} else if (pin == 65) {
+			return (CORE_PIN65_PINREG & CORE_PIN65_BITMASK) ? 1 : 0;
+		} else if (pin == 66) {
+			return (CORE_PIN66_PINREG & CORE_PIN66_BITMASK) ? 1 : 0;
+		} else if (pin == 67) {
+			return (CORE_PIN67_PINREG & CORE_PIN67_BITMASK) ? 1 : 0;
+		} else if (pin == 68) {
+			return (CORE_PIN68_PINREG & CORE_PIN68_BITMASK) ? 1 : 0;
+		} else if (pin == 69) {
+			return (CORE_PIN69_PINREG & CORE_PIN69_BITMASK) ? 1 : 0;
 #endif
 		} else {
 			return 0;
@@ -3101,7 +3196,7 @@ static inline void digitalToggleFast(uint8_t pin)
 			CORE_PIN38_PORTTOGGLE = CORE_PIN38_BITMASK;
 		} else if (pin == 39) {
 			CORE_PIN39_PORTTOGGLE = CORE_PIN39_BITMASK;
-#if CORE_NUM_DIGITAL > 40
+#if CORE_NUM_DIGITAL > 39
 		} else if (pin == 40) {
 			CORE_PIN40_PORTTOGGLE = CORE_PIN40_BITMASK;
 		} else if (pin == 41) {
@@ -3115,7 +3210,7 @@ static inline void digitalToggleFast(uint8_t pin)
 		} else if (pin == 45) {
 			CORE_PIN45_PORTTOGGLE = CORE_PIN45_BITMASK;
 #endif
-#if CORE_NUM_DIGITAL > 46
+#if CORE_NUM_DIGITAL > 45
 		} else if (pin == 46) {
 			CORE_PIN46_PORTTOGGLE = CORE_PIN46_BITMASK;
 		} else if (pin == 47) {

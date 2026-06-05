@@ -125,6 +125,8 @@ const struct pwm_pin_info_struct pwm_pin_info[] = {
 	{0, M(1, 0), 0, 0},  // duplicate QuadTimer3_1
 	{0, M(1, 0), 0, 0},  // duplicate QuadTimer3_2
 	{2, M(4, 0), 0, 1},  // QuadTimer4_0  45  // B0_09
+#endif
+#if defined(DEV45)
 // Our added ones (Dev board 4&5 usage)
 	{0, M(1, 0), 0, 0},  // 46
 	{0, M(1, 0), 0, 0},
@@ -144,7 +146,7 @@ const struct pwm_pin_info_struct pwm_pin_info[] = {
 	{0, M(1, 0), 0, 0},
 	{1, M(4, 2), 1, 1},  // FlexPWM4_2_A  62  // B1_14
 	{1, M(4, 3), 1, 1},  // FlexPWM4_3_A  63  // B1_15
-#endif
+#endif // DEV45
 };
 
 // Known usage of FlexPWM and QuadTimers
