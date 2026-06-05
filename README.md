@@ -14,5 +14,7 @@ Arduino IDE 2.3.9 compiles but fails to upload to DEboard with this error: "Plat
 I'm not smart enough to know why:)
 
 06-05-2026
+
 Updated "core_pins.h", "digital.c", "pwm.c" and boards.txt.
+
 Added (-DDEV45) define to boards.txt to prevent DB4 & DB5 extened defines from being included in MicroMod defines when using a MicroMod device.
