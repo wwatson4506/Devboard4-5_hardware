@@ -38,7 +38,7 @@ teensyDevBrd4.build.flags.dep=-MMD
 teensyDevBrd4.build.flags.optimize=-Os
 teensyDevBrd4.build.flags.cpu=-mthumb -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-d16
 #teensyDevBrd4.build.flags.defs=-D__IMXRT1062__ -DTEENSYDUINO=159
-teensyDevBrd4.build.flags.defs=-D__IMXRT1062__ -DTEENSYDUINO=159 -DARDUINO_TEENSY_MICROMOD
+teensyDevBrd4.build.flags.defs=-D__IMXRT1062__ -DTEENSYDUINO=159 -DARDUINO_TEENSY_MICROMOD -DDEV45
 teensyDevBrd4.build.flags.cpp=-std=gnu++17 -fno-exceptions -fpermissive -fno-rtti -fno-threadsafe-statics -felide-constructors -Wno-error=narrowing
 teensyDevBrd4.build.flags.c=
 teensyDevBrd4.build.flags.S=-x assembler-with-cpp
@@ -267,7 +267,7 @@ teensyDevBrd5.build.flags.dep=-MMD
 teensyDevBrd5.build.flags.optimize=-Os
 teensyDevBrd5.build.flags.cpu=-mthumb -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-d16
 #teensyDevBrd5.build.flags.defs=-D__IMXRT1062__ -DTEENSYDUINO=159
-teensyDevBrd5.build.flags.defs=-D__IMXRT1062__ -DTEENSYDUINO=159 -DARDUINO_TEENSY_MICROMOD
+teensyDevBrd5.build.flags.defs=-D__IMXRT1062__ -DTEENSYDUINO=159 -DARDUINO_TEENSY_MICROMOD -DDEV45
 teensyDevBrd5.build.flags.cpp=-std=gnu++17 -fno-exceptions -fpermissive -fno-rtti -fno-threadsafe-statics -felide-constructors -Wno-error=narrowing
 teensyDevBrd5.build.flags.c=
 teensyDevBrd5.build.flags.S=-x assembler-with-cpp
