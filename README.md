@@ -18,3 +18,7 @@ I'm not smart enough to know why:)
 Updated core_pins.h, digital.c, pwm.c and boards.txt.
 
 Added (-DDEV45) define to boards.txt to prevent DB4 & DB5 extened defines from being included in MicroMod defines when using a MicroMod device.
+
+11-25-26
+
+Updated imxrt1062_mm_sdram.ld to TD1.62 version. Fixed link errors.
